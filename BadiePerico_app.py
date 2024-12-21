@@ -16,3 +16,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+import streamlit as st
+import pandas as pd
+
+# Cargar el archivo CSV
+df = pd.read_csv("Clientes_Empresa_Limpiados.csv")
+
+# Mostrar las primeras 20 filas
+st.write("Primeras 20 filas del archivo CSV:")
+st.dataframe(df.head(20))
