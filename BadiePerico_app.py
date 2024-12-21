@@ -17,6 +17,6 @@ try:
     st.write("Base de datos de clientes:")
     st.dataframe(df)  # Mostrar los datos en una tabla interactiva
 except FileNotFoundError:
-    st.error("El archivo 'Clientes_Empresa_Limpiados.csv' no se encontró. Asegúrate de que esté en el mismo directorio que este archivo.") 
+    st.error("El archivo 'Clientes_Empresa_Limpiados.csv' no se encontró. Asegúrate de que esté en el mismo directorio que este archivo.")
 except Exception as e:
     st.error(f"Se produjo un error al cargar el archivo: {e}")
