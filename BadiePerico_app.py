@@ -11,7 +11,7 @@ st.write("Esta es mi primera aplicación con Streamlit")
 # Intentar cargar el archivo CSV
 try:
     # Leer el archivo CSV
-    df = pd.read_csvdf = pd.read_csv(r'C:\Users\HOLA\Desktop\mi_primera_app\Clientes_Empresa_Limpiados.csv')
+    df = pd.read_csv('Clientes_Empresa_Limpiados.csv')
 
     # Mostrar la tabla en la aplicación
     st.write("Base de datos de clientes:")
